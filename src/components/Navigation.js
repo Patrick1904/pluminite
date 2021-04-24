@@ -18,6 +18,25 @@ const Container = styled('div')`
             margin-right: 20px;
         }
     }
+
+    @media (max-width: 767px) {
+        padding: 0 15px;
+        height: 62px;
+
+        .left {
+            font-size: 24px
+        }
+
+        .right {
+            .button {
+                font-size: 13px;
+
+                :first-of-type {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
 `
 
 export default function Navigation() {

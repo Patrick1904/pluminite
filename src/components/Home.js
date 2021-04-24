@@ -21,11 +21,19 @@ const Container = styled('div')`
 
     .item {
         position: relative;
+        transition: 250ms;
+        margin: 15px 5px;
+        :hover {
+            transform: scale(1.01);
+        }
 
         img {
             border-radius: 8px;
-            max-width: 300px;
-            margin: 10px;
+            max-width: 100%;
+
+            @media (min-width: 1100px) {
+                max-width: 320px;
+            }
         }
 
         button {
@@ -39,6 +47,11 @@ const Container = styled('div')`
         text-align: center;
         font-size: 100px;
         margin-bottom: 20px;
+
+        @media (max-width: 767px) {
+            margin-top: 30px;
+            font-size: 70px;
+        }
     }
 
     .desc {

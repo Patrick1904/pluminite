@@ -35620,6 +35620,25 @@ const Container = (0, _styledComponents.default)('div')`
             margin-right: 20px;
         }
     }
+
+    @media (max-width: 767px) {
+        padding: 0 15px;
+        height: 62px;
+
+        .left {
+            font-size: 24px
+        }
+
+        .right {
+            .button {
+                font-size: 13px;
+
+                :first-of-type {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
 `;
 
 function Navigation() {
@@ -35697,11 +35716,19 @@ const Container = (0, _styledComponents.default)('div')`
 
     .item {
         position: relative;
+        transition: 250ms;
+        margin: 15px 5px;
+        :hover {
+            transform: scale(1.01);
+        }
 
         img {
             border-radius: 8px;
-            max-width: 300px;
-            margin: 10px;
+            max-width: 100%;
+
+            @media (min-width: 1100px) {
+                max-width: 320px;
+            }
         }
 
         button {
@@ -35715,6 +35742,11 @@ const Container = (0, _styledComponents.default)('div')`
         text-align: center;
         font-size: 100px;
         margin-bottom: 20px;
+
+        @media (max-width: 767px) {
+            margin-top: 30px;
+            font-size: 70px;
+        }
     }
 
     .desc {
