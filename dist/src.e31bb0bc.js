@@ -62192,7 +62192,7 @@ __exportStar(require("./common-index"), exports);
 require("error-polyfill");
 
 },{"./key_stores/browser-index":"../node_modules/near-api-js/lib/key_stores/browser-index.js","./common-index":"../node_modules/near-api-js/lib/common-index.js","error-polyfill":"../node_modules/error-polyfill/index.js"}],"config.js":[function(require,module,exports) {
-const CONTRACT_NAME = "dev-1619291232796-4539537" || 'pluminite';
+const CONTRACT_NAME = "dev-1619291232796-4539537" || 'pluminite.one.testnet';
 
 function getConfig(env) {
   switch (env) {
